@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+
+
+[context.production.environment]
+
+  HUGO_VERSION = "0.147.0" 
+  GO_VERSION = "1.21.5"
+  NODE_VERSION = "18"
+

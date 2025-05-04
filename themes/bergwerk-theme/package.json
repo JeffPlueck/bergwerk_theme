@@ -1,0 +1,19 @@
+{
+  "name": "own_theme_hno",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss build assets/css/styles.css -o static/css/styles.css",
+    "watch": "npx tailwindcss build assets/css/styles.css -o static/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "Jeffrey Plueckhahn",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.3"
+  }
+}
