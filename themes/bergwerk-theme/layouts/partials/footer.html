@@ -1,0 +1,35 @@
+<div id="footer">
+    <div >
+        <div >
+            {{- if gt (len .Site.Params.footer.links) 0 }}
+                {{- $link_cols := div (cond .Site.Params.footer.contact_form.enabled 6 12) (len .Site.Params.footer.links) }}
+                {{- range .Site.Params.footer.links }}
+                <section >
+                    <h3>{{ .header }}</h3>
+                    <ul >
+                        {{- range .links }}
+                            {{- if .pageref -}}
+                                <li><a href="{{ (site.GetPage .pageref).Permalink }}">{{ .title }}</a>
+                            {{- else -}}
+                                <li><a href="{{ .url }}">{{ .title }}</a>
+                            {{- end -}}
+                        {{- end }}
+                    </ul>
+                </section>
+                {{- end }}
+            {{ end }}
+        </div>
+    </div>
+
+
+
+    <div >
+        <ul >
+            {{ if .Site.Copyright }}
+                <li>{{ replace .Site.Copyright "{currentYear}" now.Year }}
+            {{ end }}
+           
+        </ul>
+    </div>
+</div>
+

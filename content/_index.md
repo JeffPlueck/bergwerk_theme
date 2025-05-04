@@ -1,7 +1,6 @@
 +++
 date = '2025-04-29'
 title = 'Startseite'
-menu = 'main'
 +++
 
 ### Herzlich Willkommen in unserer HNO-Facharztpraxis Dr. med. Reinhard Wucherpfennig

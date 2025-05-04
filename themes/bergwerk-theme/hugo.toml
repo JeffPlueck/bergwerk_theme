@@ -2,8 +2,9 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
 
-[menu]
-  [[menu.main]]
+
+[menus]
+  [[menus.main]]
     name = 'Home'
     pageRef = '/'
     weight = 10
@@ -22,3 +23,18 @@ title = 'My New Hugo Site'
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
+
+
+  [params.footer]
+
+    [[params.footer.links]]
+      header = "Links"
+    [[params.footer.links.links]]
+      title = "Kontakt"
+      url = "/kontakt/"
+    [[params.footer.links.links]]
+      title = "Impressum"
+      url = "/impressum/"
+    [[params.footer.links.links]]
+      title = "Datenschutz"
+      url = "/datenschutz/"
