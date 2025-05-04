@@ -2,8 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
 
-[menus]
-  [[menus.main]]
+[menu]
+  [[menu.main]]
     name = 'Home'
     pageRef = '/'
     weight = 10

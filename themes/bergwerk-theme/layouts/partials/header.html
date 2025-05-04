@@ -1,0 +1,20 @@
+<header>
+    <div class="container mx-auto h-[90px] flex items-center justify-between border-b border-b-gray">
+
+        <a class="text-[24px]font-bold" href="/" >{{ .Site.Title }}</a>
+
+        <nav class="flex gap-[20px]">
+
+            {{ printf "%#v" .Site.Menus.main }}
+            {{- range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="text-[18px] font-medium">{{ .Name }}</a>
+            {{ end }}
+
+            {{ if not .Site.Menus.main }}
+            <p class="text-red-500">⚠️ Kein Menü gefunden!</p>
+            {{ end }}
+        </nav>
+
+        
+    </div>
+</header>

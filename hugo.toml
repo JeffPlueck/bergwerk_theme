@@ -2,3 +2,35 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'bergwerk-theme'
+
+[menus]
+  [[menus.main]]
+    name = "PRAXIS"
+    url = "/praxis/"
+    weight = 1
+
+  [[menus.main]]
+    name = "TEAM"
+    url = "/team/"
+    weight = 2
+
+  [[menus.main]]
+    name = "SPRECHZEITEN"
+    url = "/sprechzeiten/"
+    weight = 5
+
+  [[menus.main]]
+    name = "LEISTUNGEN"
+    url = "/leistungen/"
+    weight = 3
+
+  [[menus.main]]
+    name = "KONTAKT"
+    url = "/kontakt/"
+    weight = 4
+
+
+[module]
+[module.hugoVersion]
+  extended = false
+  min = '0.146.0'
